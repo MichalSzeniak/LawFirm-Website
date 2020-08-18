@@ -1,0 +1,20 @@
+.hero { 
+    background: $background-blue;
+    width: 100%;
+    min-height: 100vh;
+
+    &__container {
+        width: 71rem;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 400px;
+    }
+}
