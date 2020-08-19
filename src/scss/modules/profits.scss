@@ -1,0 +1,40 @@
+.profits {
+  &--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 25px;
+
+    @media (min-width: 1300px) {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        position: absolute;
+        top: -130px;
+    }
+  }
+}
+
+.profits--container-test {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.profit {
+    background-color: #fff;
+    // border: 1px $text-dark solid;
+    border-radius: 16px;
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &--icon {
+      margin: 1rem;
+    }
+
+    &--title {
+      font-size: 18px;
+      color: $text-dark;
+    }
+  }
+}
