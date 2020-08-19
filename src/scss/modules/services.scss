@@ -1,0 +1,43 @@
+.services {
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 64px;
+    @media (max-width: 1080px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 770px) {
+      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.sercives__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sercives__header {
+  font-size: 64px;
+  font-weight: normal;
+  text-align: center;
+  @media (max-width: 1080px) {
+    font-size: 48px;
+  }
+}
+
+.service {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+
+  &__name {
+    font-size: 24px;
+  }
+}
