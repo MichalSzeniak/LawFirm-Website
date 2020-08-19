@@ -3,10 +3,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 64px;
-    @media (max-width: 1080px) {
+    @media (max-width: 1200px) {
       grid-template-columns: 1fr 1fr;
     }
-    @media (max-width: 770px) {
+    @media (max-width: 800px) {
       grid-template-columns: 1fr;
       display: flex;
       flex-direction: column;
@@ -35,9 +35,10 @@
   display: flex;
   justify-items: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
 
   &__name {
     font-size: 24px;
+    margin-left: 32px;
   }
 }
