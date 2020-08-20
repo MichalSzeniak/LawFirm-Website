@@ -29,6 +29,10 @@
   @media (max-width: 1080px) {
     font-size: 48px;
   }
+
+  @media (max-width: 700px) {
+    font-size: 36px;
+  }
 }
 
 .service {
@@ -40,5 +44,15 @@
   &__name {
     font-size: 24px;
     margin-left: 32px;
+
+    @media (max-width: 600px) {
+      font-size: 16px;
   }
+  }
+}
+
+.service__icon {
+  @media (max-width: 500px) {
+    transform: scale(0.7);
+}
 }
