@@ -27,6 +27,8 @@
     &__list {
         display: flex;
         flex-direction: row;
+        margin: 0;
+        padding: 0 16px;
 
         @media (max-width: 750px) {
             width: 100%;
@@ -38,7 +40,7 @@
             margin: 30px 25px 0;
             list-style: none;
             @media (max-width: 600px) {
-                margin: 0 5px;
+                margin: 16px 5px;
             }
         }
     }
@@ -49,10 +51,9 @@
         font-size: 20px;
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
-        transition: 1s ease-in-out;
+        transition: 0.3s linear;
         &:hover {
-            border-bottom: 3px #fff solid;
-            transform: scaleX(1);
+            border-bottom: 3px rgba(255, 255, 255, 0.514) solid;
         }
 
         @media (max-width: 450px) {
@@ -60,8 +61,12 @@
         }
     }
 
+    &__active {
+        border-bottom: 3px #fff solid;
+    }
+
     &__scroll {
-        background-color: rgba(73, 73, 73, 0.384);
+        background-color: rgba(73, 73, 73, 0.562);
         backdrop-filter: blur(5px);
         
         @media (max-width: 600px) {
